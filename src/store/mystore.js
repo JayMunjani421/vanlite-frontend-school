@@ -5,7 +5,6 @@ import AreaReducer from "../reducers/AreaReducer";
 import StudentReducer from "../reducers/StudentReducer";
 import BusReducer from "../reducers/BusReducer";
 
-
 const rootReducer = combineReducers({
     "school": SchoolReducer,
     "area": AreaReducer,

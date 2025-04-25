@@ -17,7 +17,6 @@ export const getAllStudentData = () => {
     };
 };
 
-
 export const insertStudent = (formData) => {
     return (dispatch) => {
         console.log("Sending data to backend:", formData); // Log formData to make sure it's not empty
@@ -28,11 +27,9 @@ export const insertStudent = (formData) => {
                     if (json["status"] == true) {
                         var message = json["message"];
                         alert(message);
-                        // dispatch({ "type": "SHOW_MESSAGE", "payload": { "message": "Data Inserted Successfully" } });
                         dispatch(getAllStudentData());
                     }
                     else {
-                        // var message = json["message"];
                         alert(message);
                     }
                 }

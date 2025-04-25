@@ -17,7 +17,6 @@ export const getAllBusData = () => {
     };
 };
 
-
 export const insertBus = (formData) => {
     return (dispatch) => {
         console.log("Sending data to backend:", formData); // Log formData to make sure it's not empty
@@ -28,11 +27,9 @@ export const insertBus = (formData) => {
                     if (json["status"] == true) {
                         var message = json["message"];
                         alert(message);
-                        // dispatch({ "type": "SHOW_MESSAGE", "payload": { "message": "Data Inserted Successfully" } });
                         dispatch(getAllBusData());
                     }
                     else {
-                        // var message = json["message"];
                         alert(message);
                     }
                 }

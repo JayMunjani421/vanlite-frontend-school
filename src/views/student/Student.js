@@ -109,8 +109,6 @@ const Student = () => {
                                                         <td>{student.student_id}</td>
                                                         <td>{student.student_name}</td>
                                                         <td>{student.student_standard}</td>
-                                                        {/* <td>{student.student_birthdate}</td> */}
-                                                        {/* <td>{new Date(student.student_birthdate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</td> */}
                                                         <td>{new Date(student.student_birthdate).toLocaleDateString('en-GB', { day: 'numeric', month: 'numeric', year: 'numeric' })}</td>
                                                         <td>{schoolData?.school_name || "Loading..."}</td>
                                                         <td>

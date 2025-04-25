@@ -50,38 +50,3 @@ root.render(
         </BrowserRouter>
     </Provider>
 );
-
-
-
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import mystore from './store/mystore';
-// import SchoolLogin from './views/school/Login';
-// import Dashboard from './views/Dashboard';
-// import PrivateRoute from './views/components/ValidationRoute';
-// import Area from './views/area/Area';
-// import AreaForm from './views/area/AreaForm';
-// import AreaDetail from './views/area/AreaDetail';
-// import AreaEditForm from './views/area/AreaEditForm';
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//     <Provider store={mystore}>
-
-//         <BrowserRouter>
-//             <Routes>
-//                 <Route path="/" element={<PrivateRoute> <Dashboard /> </PrivateRoute>} />
-//                 <Route path="/schoollogin" element={<SchoolLogin />}></Route>
-//                 <Route path="/area" element={<Area/>}></Route>
-//                 <Route path="/areaform" element={<AreaForm />} />
-//                 <Route path="/areadetail/:id" element={<AreaDetail />} />
-//                 <Route path="/areaeditform/:id" element={<AreaEditForm />} />
-
-//             </Routes>
-//         </BrowserRouter>
-
-//     </Provider>
-
-// );

@@ -14,7 +14,6 @@ export const loginSchool = (params, navigate) => {
                         alert(message);
                         sessionStorage.setItem("schoollogin", true);
                         sessionStorage.setItem("token", json["access_token"]);
-                        // sessionStorage.setItem("schooldata", JSON.stringify(json["data"]));
                         dispatch({ "type": "LOGIN", "payload": { "data": json["data"].school || [] } });
                         console.log(sessionStorage.getItem("token"));
                         navigate("/");
@@ -44,7 +43,6 @@ export const getSingleSchoolData = (id) => {
             });
     };
 };
-
 
 export const getAllSchoolData = () => {
     return (dispatch) => {

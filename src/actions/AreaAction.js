@@ -27,11 +27,9 @@ export const insertArea = (formData) => {
                     if (json["status"] == true) {
                         var message = json["message"];
                         alert(message);
-                        // dispatch({ "type": "SHOW_MESSAGE", "payload": { "message": "Data Inserted Successfully" } });
                         dispatch(getAllAreaData());
                     }
                     else {
-                        // var message = json["message"];
                         alert(message);
                     }
                 }

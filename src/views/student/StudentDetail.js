@@ -63,7 +63,6 @@ const StudentDetail = () => {
                                         <Col md={6}><strong>Mother's Mobile:</strong> {single.mother_mobile}</Col>
                                         <Col md={6}><strong>Password:</strong> {single.student_password}</Col>
                                         <Col md={6}><strong>Standard:</strong> {single.student_standard}</Col>
-                                        {/* <Col md={6}><strong>Birthdate:</strong> {single.student_birthdate}</Col> */}
                                         <Col md={6}><strong>Birthdate:</strong> {new Date(single.student_birthdate).toLocaleDateString('en-GB', { day: 'numeric', month: 'numeric', year: 'numeric' })}</Col>
                                         <Col md={6}><strong>Active Status:</strong> {single.is_active}</Col>
                                         <Col md={6}><strong>Area ID:</strong> {single.area_id}</Col>

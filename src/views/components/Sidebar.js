@@ -29,18 +29,6 @@ const Sidebar = () => {
                         <i className="bi bi-menu-button-wide"></i><span>School</span><i className="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="school-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
-                        {/* {!sessionStorage.getItem("schoollogin") && 
-                        <Link to="/schoollogin" >
-                            <li>
-                                <i className="bi bi-circle"></i><span>Login</span>
-                            </li>
-                        </Link>}
-                        {sessionStorage.getItem("schoollogin") && 
-                        <Link to="" onClick={logout} >
-                            <li>
-                                <i className="bi bi-circle"></i><span>Logout</span>
-                            </li>
-                        </Link>} */}
                         {sessionStorage.getItem("schoollogin") ? (
                             <li className="nav-item">
                                 <a className="nav-link" onClick={logout} style={{ cursor: "pointer" }}>

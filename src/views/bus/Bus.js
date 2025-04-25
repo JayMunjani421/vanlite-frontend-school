@@ -52,10 +52,6 @@ const Bus = () => {
         dispatch(deleteBus(id));
     };
 
-    // const editArea = (id) => {
-    //     navigate('/areaeditform/' + id);
-    // };
-
     const editBus = (id) => {
         navigate('/buseditform/' + id, { state: { schoolName: School_data?.school_name } });
     };

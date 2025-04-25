@@ -18,7 +18,7 @@ const SchoolLogin = () => {
             "school_email": schoolemail,
             "school_password": password
         };
-        dispatch(loginSchool(params,navigate));
+        dispatch(loginSchool(params, navigate));
     };
 
     return (<>
@@ -74,11 +74,7 @@ const SchoolLogin = () => {
                                             <div className="col-12">
                                                 <button className="btn btn-primary w-100" type="submit">Login</button>
                                             </div>
-                                            {/* <div className="col-12">
-                                                <p className="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
-                                            </div> */}
                                         </form>
-
                                     </div>
                                 </div>
 
